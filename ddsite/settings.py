@@ -25,7 +25,7 @@ SECRET_KEY = ')786pijn2w37v5=o7fg27kp7!+7*x61kw3*85cbrdj#6o+7s+j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://mldd.herokuapp.com/']
+ALLOWED_HOSTS = ['mldd.herokuapp.com']
 
 
 # Application definition
