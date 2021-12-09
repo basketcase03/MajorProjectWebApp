@@ -13,4 +13,6 @@ def get_status(feats):
     df = df.reindex(columns=feat_cols)
     X = df.loc[:, feat_cols].values
     res = loaded_model.predict(X)
-    return str(type(res[0]))
+    if res == 1:
+        return 'Depressed'
+    return 'Not Depressed'
