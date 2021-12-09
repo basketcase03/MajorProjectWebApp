@@ -2,7 +2,7 @@
 
 <head>
 	<title>Depression Detection</title>
-	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="{{ STATIC_URL }}index.css" />
 </head>
 
 <body>
@@ -10,7 +10,7 @@
 		<div class="container">
 			<div class="heading">Depression Detection</div>
 			<form action="" method="post" class="form-container">
-				<!-- {% csrf_token %} -->
+				{% csrf_token %}
 
 				<label for="PFQ090">Require special healthcare equipment </label>
 				<input id="PFQ090" type="number" name="PFQ090">
@@ -20,22 +20,21 @@
 
 				<label for="INQ060">Income from other disability pension</label>
 				<input id="INQ060" type="number" name="INQ060">
-				<div class="value-desc">1 - Yes</br> 2 - No</br> 9 - Don't know</div>
+				<div class="value-desc">1 - Yes</br> 2 - No</div>
 				<br>
 
 				<label for="DBQ197">Past 30 day milk product consumption</label>
 				<input id="DBQ197" type="number" name="DBQ197">				
 				<div class="value-desc">0 - Never</br> 1 - Rarely - less than a week</br>
 					2 - Sometimes-once a week or more, but less than once a day</br> 3 - Often-once a day or more?</br>
-					4 - Varied</br> 9 - Don't know
+					4 - Varied
 				</div>
 				<br>
 
 				<label for="CBD071">Money spent at supermarket/grocery store</label>
 				<input id="CBD071" type="number" name="CBD071">
 				<div class="value-desc">0 to 6428 - Range of Values</br>
-					8400 -	8400 and over</br>
-					999999 - Don't know
+					8400 -	8400 and over
 				</div>
 				<br>
 
@@ -45,28 +44,27 @@
 					2 - 3 to 5</br> 	
 					3 - 6 to 10</br>	
 					4 - 11 times or more</br>
-					5 - Never</br>
-					9 - Don't know</div>
+					5 - Never
 				<br>
 
 				<label for="CBQ596">Heard of My Plate</label>
 				<input id="CBQ596" type="number" name="CBQ596">
-				<div class="value-desc">1 - Yes</br> 2 - No</br> 9 - Don't know</div>
+				<div class="value-desc">1 - Yes</br> 2 - No</div>
 				<br>
 
 				<label for="MCQ300C">Close relative had diabetes?</label>
 				<input id="MCQ300C" type="number" name="MCQ300C">
-				<div class="value-desc">1 - Yes</br> 2 - No</br> 9 - Don't know</div>
+				<div class="value-desc">1 - Yes</br> 2 - No</div>
 				<br>
 
 				<label for="MCQ160F">Ever told you had a stroke</label>
 				<input id="MCQ160F" type="number" name="MCQ160F">
-				<div class="value-desc">1 - Yes</br> 2 - No</br> 9 - Don't know</div>
+				<div class="value-desc">1 - Yes</br> 2 - No</div>
 				<br>
 
 				<label for="INQ150">Income from other sources</label>
 				<input id="INQ150" type="number" name="INQ150">
-				<div class="value-desc">1 - Yes</br> 2 - No</br> 9 - Don't know</div>
+				<div class="value-desc">1 - Yes</br> 2 - No</div>
 				<br>
 
 				<label for="DMDMARTL">Marital status</label>
@@ -76,8 +74,7 @@
 					3 - Divorced</br>
 					4 - Separated</br>
 					5 - Never married</br>
-					6 - Living with partner</br>
-					99 - Don't Know</div>
+					6 - Living with partner</div>
 				<br>
 
 				<label for="SDMVSTRA">Masked variance pseudo-stratum</label>
@@ -92,25 +89,23 @@
 					3 - A little trouble	</br>
 					4 - Moderate hearing trouble</br>
 					5 - A lot of trouble</br>
-					6 - Deaf</br>
-					99 - Don't know</div>
+					6 - Deaf</div>
 				<br>
 
 				<label for="CBD091">Money spent on nonfood items</label>
 				<input id="CBD091" type="number" name="CBD091">
-				<div class="value-desc">0 to 1285 - Range of Values,
-					8400 - 8400 and over
-					999999 - Don't know</div>
+				<div class="value-desc">0 to 1285 - Range of Values</div>br>
+					8400 - 8400 and over</div>
 				<br>
 
 				<label for="HUQ071">Overnight hospital patient in last year</label>
 				<input id="HUQ071" type="number" name="HUQ071">
-				<div class="value-desc">1 - Yes</br> 2 - No</br> 9 - Don't know</div>
+				<div class="value-desc">1 - Yes</br> 2 - No</div>
 				<br>
 
 				<label for="DLQ150">Take medication for depression?</label>
 				<input id="DLQ150" type="number" name="DLQ150">
-				<div class="value-desc">1 - Yes</br> 2 - No</br> 9 - Don't know</div>
+				<div class="value-desc">1 - Yes</br> 2 - No/div>
 				<br>
 
 				<label for="HSAQUEX">Source of Health Status Data</label>
@@ -125,31 +120,29 @@
 					2 - Very Good</br>
 					3 - Good</br>
 					4 - Fail</br>
-					6 - Poor</br>
-					99 - Don't know</div>
+					6 - Poor</br></div>
 				<br>
 
 				<label for="INQ140">Income from interest/dividends or rental</label>
 				<input id="INQ140" type="number" name="INQ140">
-				<div class="value-desc">1 - Yes</br> 2 - No</br> 9 - Don't know</div>
+				<div class="value-desc">1 - Yes</br> 2 - No</div>
 				<br>
 
 				<label for="DLQ020">Have serious difficulty seeing?</label>
 				<input id="DLQ020" type="number" name="DLQ020">
-				<div class="value-desc">1 - Yes</br> 2 - No</br> 9 - Don't know</div>
+				<div class="value-desc">1 - Yes</br> 2 - No</div>
 				<br>
 
 				<label for="MCQ160L">Ever told you had any liver condition</label>
 				<input id="MCQ160L" type="number" name="MCQ160L">
-				<div class="value-desc">1 - Yes</br> 2 - No</br> 9 - Don't know</div>
+				<div class="value-desc">1 - Yes</br> 2 - No</div>
 				<br>
 
 				<label for="FSD032B">HH Food didn't last</label>
 				<input id="FSD032B" type="number" name="FSD032B">
 				<div class="value-desc">1 - Often true</br>
 					2 - Sometimes true</br>
-					3 - Never true</br>
-					9	Don't know</div>
+					3 - Never true</div>
 				<br>
 
 				<label for="MIALANG">Language of MEC Interview</label>
@@ -160,7 +153,7 @@
 				<label for="DLQ140">How often do you feel depressed?</label>
 				<input id="DLQ140" type="number" name="DLQ140">
 				<div class="value-desc">1	- Daily</br> 2 - Weekly</br> 3 - Monthly</br> 4 - A few times a year</br>
-					5 - Never</br> 9 - Don't know</div>
+					5 - Never</div>
 				<br>
 
 				<label for="RIDRETH1">Race/Hispanic origin</label>
@@ -177,8 +170,7 @@
 				<input id="DBD910" type="number" name="DBD910">
 				<div class="value-desc">1 to 90 - Range of Values</br>
 					0 - Never</br>
-					6666 - More than 90 times in 30 days</br>
-					9999 - Don't know</div>
+					6666 - More than 90 times in 30 days</div>
 				<br>
 
 				<input type="submit" value="OK">
