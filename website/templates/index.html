@@ -283,13 +283,14 @@
 					0 - Never</br>
 					6666 - More than 90 times in 30 days</div>
 				<br>
+				<label>
+					{% if sub_text %}
+					{{sub_text}}
+					{% endif %}
+				</label>
 
 				<input type="submit" value="OK">
-				<label>
-			{% if sub_text %}
-			{{sub_text}}
-			{% endif %}
-		</label>
+			
 			</form>
 			
 		</div>
